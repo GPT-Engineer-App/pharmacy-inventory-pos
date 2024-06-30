@@ -1,14 +1,18 @@
-// Update this page (the content is just a fallback if you fail and example)
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
       <div>
-        <h1 className="text-3xl text-center">Your Blank Canvas</h1>
+        <h1 className="text-3xl text-center">Pharmacy Inventory Management and POS System</h1>
         <p className="text-center">
-          Chat with the agent to start making edits.
+          Welcome to the Pharmacy Inventory Management and POS System. Use the navigation to access different sections.
         </p>
+        <div className="flex justify-center space-x-4 mt-4">
+          <Link to="/inventory" className="text-blue-500">Inventory Management</Link>
+          <Link to="/pos" className="text-blue-500">POS System</Link>
+        </div>
       </div>
     </div>
   );
